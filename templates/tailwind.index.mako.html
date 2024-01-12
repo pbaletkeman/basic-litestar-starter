@@ -1,0 +1,25 @@
+<%inherit file="tailwind.base.mako.html"/>
+
+<%block name="title">
+    Litestar HTMX Fullstack With Mako
+</%block>
+
+<%block name="header">
+    ${parent.header()}
+    A Fullstack site created in Litestar 2.5 for Python using <a href="https://htmx.org">htmx.org</a>
+</%block>
+
+
+<%block name="intro">
+    intro
+</%block>
+
+<!-- sampleObj was passed into the template -->
+${sampleObj}
+<br>
+
+<h1 class="text-3xl font-bold underline">
+    Hello world! From TailWind
+</h1>
+
+<h3><a href="/docs/">Endpoint Listing</a></h3>
